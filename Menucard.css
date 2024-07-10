@@ -1,0 +1,82 @@
+/* MenuCard.css */
+
+.menu-card {
+  background-color:#ffd83d ; /* Light yellow background */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto; /* Centering the menu card */
+  overflow: hidden; /* Ensure no horizontal overflow */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+}
+
+.menu-title {
+  text-align: center;
+  color: #333333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.category-section {
+  margin-top: 30px;
+}
+
+.category-title {
+  color: #333333;
+  font-size: 24px;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.menu-item {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Adjust vertical spacing */
+  padding: 15px;
+}
+
+.menu-item-name {
+  color: #333333;
+  font-size: 20px;
+  margin: 0;
+}
+
+.menu-item-price {
+  color: #666666;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .menu-card {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens and above */
+    column-gap: 20px; /* Add gap between columns */
+    padding: 20px; /* Restore padding for medium screens */
+  }
+  
+  .menu-title {
+    grid-column: 1 / -1; /* Expand title across both columns */
+    text-align: center;
+  }
+
+  .category-section {
+    grid-column: 1 / -1; /* Expand category section across both columns */
+    margin-top: 30px;
+  }
+
+  .category-title {
+    text-align: left; /* Adjust category title alignment */
+  }
+
+  .menu-item {
+    width: auto; /* Ensure menu items adjust width */
+    margin-bottom: 20px; /* Adjust vertical spacing */
+  }
+}

@@ -1,0 +1,78 @@
+.header{
+    height: 34vw;
+    margin: 34px auto;
+    background:url('/src/assets/loud.jpeg') no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border-radius: 20px; */
+    /* border-bottom-left-radius: 100px; */
+    border-end-end-radius: 0px;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+   
+
+}
+.header-contents h2{
+    font-weight: 500;
+    color: rgb(252, 252, 252);
+    font-size: max(4.5vw,22px);
+    
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+    padding-top: 10%;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+@media (max-width:1500px) {
+    
+    .header-contents h2{
+       
+    }
+    
+}
+@media(max-width:1050px){
+    
+    .header-contents{
+        margin-bottom: 2%;
+    }
+    .header{
+        height: 38vw;
+        /* padding-top: 45%; */
+        
+    }
+    .header-contents{
+        max-width: 55%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 70%;
+        padding-bottom: 5%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 3vw;
+    }
+}

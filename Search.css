@@ -1,0 +1,116 @@
+.search-container {
+    margin: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-results {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .search-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .search-item-details {
+    flex-grow: 1;
+  }
+  
+  .search-item-details h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .search-item-details p {
+    margin: 5px 0;
+  }
+  .cart-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cart-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-button.remove {
+    background-color: red;
+  }
+  
+  .cart-button:hover {
+    background-color: rgb(94, 182, 94);
+  }
+  
+  .cart-button.remove:hover {
+    background-color: darkred;
+  }
+  .g{
+    background-color: rgb(77, 197, 77);
+  }
+  .r:hover{
+    background-color: rgb(211, 58, 58);
+
+  }
+  .r{
+    background-color: rgb(207, 61, 61);
+    
+  }
+  .cart-count {
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .cart-button {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      font-size: 16px;
+      margin: 0 5px;
+    }
+  
+    .cart-count {
+      font-size: 16px;
+      padding: 5px;
+      min-width: 30px;
+    }
+  }
+  
